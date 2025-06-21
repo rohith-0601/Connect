@@ -1,0 +1,27 @@
+POST http://localhost:5001/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"rohith",
+    "password":"rohith",
+    "email":"rohith3@gmail.com",
+    "name":"rohith"
+}
+
+###
+POST http://localhost:5001/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "password":"rohith",
+    "email":"rohith3@gmail.com"
+
+}
+
+###
+get http://localhost:5001/get_user_and_profile
+Content-Type: application/json
+
+{
+    "token":"6ee2f7c5b99f51be5ad5757b5ed1cd1022885aba5b34e31f30584c265607c289"
+}
